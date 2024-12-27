@@ -1,0 +1,42 @@
+--Mdir .
+--cc
++incdir+../../../hw/vendor/pulp-platform-common-cells/include
+-CFLAGS -I../../../hw/vendor/pulp-platform-common-cells/include
++incdir+../../../hw/vendor/pulp-platform-register-interface/include
+-CFLAGS -I../../../hw/vendor/pulp-platform-register-interface/include
++incdir+../../../tb
+-CFLAGS -I../../../tb
++incdir+../../../sw
+-CFLAGS -I../../../sw
+/workspace/x-heep/conv1d-accel-group14/hw/misc/verilator-waivers-v4.vlt
+../../../hw/packages/conv1d_obi_pkg.sv
+../../../hw/packages/conv1d_reg_pkg.sv
+../../../hw/packages/conv1d_sram_pkg.sv
+../../../hw/control-reg/rtl/conv1d_control_reg_pkg.sv
+../../../hw/control-reg/rtl/conv1d_control_reg_top.sv
+../../../hw/control-reg/conv1d_control_reg.sv
+../../../hw/conv1d.sv
+../../../hw/conv1d_obi.sv
+../../../hw/conv1d_obi_to_sram_gnt.sv
+../../../hw/hw_accel-comp/accel.sv
+../../../hw/hw_accel-comp/final_adder.sv
+../../../hw/hw_accel-comp/CONV1D_DP.sv
+../../../hw/hw_accel-comp/adder.sv
+../../../hw/hw_accel-comp/multiplier.sv
+../../../hw/hw_accel-comp/n_bit_reg.sv
+../../../hw/hw_accel-comp/sign_ext.sv
+../../../hw/hw_accel-comp/mem_pointer.sv
+../../../hw/hw_accel-comp/CU.sv
+../../../hw/vendor/pulp-platform-register-interface/vendor/lowrisc_opentitan/src/prim_subreg_arb.sv
+../../../hw/vendor/pulp-platform-register-interface/vendor/lowrisc_opentitan/src/prim_subreg_ext.sv
+../../../hw/vendor/pulp-platform-register-interface/vendor/lowrisc_opentitan/src/prim_subreg_shadow.sv
+../../../hw/vendor/pulp-platform-register-interface/vendor/lowrisc_opentitan/src/prim_subreg.sv
+../../../hw/simulation/conv1d_sram_wrapper.sv
+../../../hw/vendor/pulp-platform-tech-cells-generic/src/rtl/tc_sram.sv
+../../../tb/conv1d_tb_wrapper.sv
+--top-module conv1d_tb_wrapper
+--exe
+../../../tb/conv1d_tb.cpp
+../../../tb/tb_macros.cpp
+../../../tb/tb_components.cpp
+../../../tb/data.c

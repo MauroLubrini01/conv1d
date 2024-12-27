@@ -1,0 +1,78 @@
+dependencies:
+  polito:isa-lab:conv1d:0.0.1: []
+files:
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../hw/packages/conv1d_obi_pkg.sv
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../hw/packages/conv1d_reg_pkg.sv
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../hw/packages/conv1d_sram_pkg.sv
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../hw/control-reg/rtl/conv1d_control_reg_pkg.sv
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../hw/control-reg/rtl/conv1d_control_reg_top.sv
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../hw/control-reg/conv1d_control_reg.sv
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../hw/conv1d.sv
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../hw/conv1d_obi.sv
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../hw/conv1d_obi_to_sram_gnt.sv
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../hw/hw_accel-comp/accel.sv
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../hw/hw_accel-comp/final_adder.sv
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../hw/hw_accel-comp/CONV1D_DP.sv
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../hw/hw_accel-comp/adder.sv
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../hw/hw_accel-comp/multiplier.sv
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../hw/hw_accel-comp/n_bit_reg.sv
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../hw/hw_accel-comp/sign_ext.sv
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../hw/hw_accel-comp/mem_pointer.sv
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../hw/hw_accel-comp/CU.sv
+hooks: {}
+name: polito_isa-lab_conv1d_0.0.1
+parameters: {}
+tool_options:
+  veribleformat:
+    verible_format_args:
+    - --assignment_statement_alignment=align
+    - --case_items_alignment=align
+    - --formal_parameters_indentation=indent
+    - --named_parameter_alignment=align
+    - --named_parameter_indentation=indent
+    - --named_port_alignment=align
+    - --named_port_indentation=indent
+    - --port_declarations_alignment=align
+    - --port_declarations_indentation=indent
+    - --assignment_statement_alignment=align
+    - --module_net_variable_alignment=align
+    - --inplace
+toplevel: cnt_obi
+version: 0.2.1
+vpi: []

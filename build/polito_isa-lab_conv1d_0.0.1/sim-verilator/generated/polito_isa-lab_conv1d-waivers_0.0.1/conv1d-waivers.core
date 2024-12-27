@@ -1,0 +1,14 @@
+CAPI=2:
+filesets:
+  rtl:
+    file_type: ''
+    files:
+    - /workspace/x-heep/conv1d-accel-group14/hw/misc/verilator-waivers-v4.vlt:
+        file_type: vlt
+    logical_name: ''
+name: polito:isa-lab:conv1d-waivers:0.0.1
+parameters: {}
+targets:
+  default:
+    filesets:
+    - rtl

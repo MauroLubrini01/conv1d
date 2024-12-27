@@ -1,0 +1,174 @@
+dependencies:
+  polito:isa-lab:conv1d-waivers:0.0.1: []
+  polito:isa-lab:conv1d:0.0.1:
+  - polito:isa-lab:conv1d-waivers:0.0.1
+  - polito:isa-lab:gen-waivers:1.0.0
+  polito:isa-lab:gen-waivers:1.0.0: []
+files:
+- core: polito:isa-lab:conv1d-waivers:0.0.1
+  file_type: vlt
+  name: /workspace/x-heep/conv1d-accel-group14/hw/misc/verilator-waivers-v4.vlt
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../hw/packages/conv1d_obi_pkg.sv
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../hw/packages/conv1d_reg_pkg.sv
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../hw/packages/conv1d_sram_pkg.sv
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../hw/control-reg/rtl/conv1d_control_reg_pkg.sv
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../hw/control-reg/rtl/conv1d_control_reg_top.sv
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../hw/control-reg/conv1d_control_reg.sv
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../hw/conv1d.sv
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../hw/conv1d_obi.sv
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../hw/conv1d_obi_to_sram_gnt.sv
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../hw/hw_accel-comp/accel.sv
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../hw/hw_accel-comp/final_adder.sv
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../hw/hw_accel-comp/CONV1D_DP.sv
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../hw/hw_accel-comp/adder.sv
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../hw/hw_accel-comp/multiplier.sv
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../hw/hw_accel-comp/n_bit_reg.sv
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../hw/hw_accel-comp/sign_ext.sv
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../hw/hw_accel-comp/mem_pointer.sv
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../hw/hw_accel-comp/CU.sv
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../hw/vendor/pulp-platform-register-interface/vendor/lowrisc_opentitan/src/prim_subreg_arb.sv
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../hw/vendor/pulp-platform-register-interface/vendor/lowrisc_opentitan/src/prim_subreg_ext.sv
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../hw/vendor/pulp-platform-register-interface/vendor/lowrisc_opentitan/src/prim_subreg_shadow.sv
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../hw/vendor/pulp-platform-register-interface/vendor/lowrisc_opentitan/src/prim_subreg.sv
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  include_path: ../../../hw/vendor/pulp-platform-common-cells/include
+  is_include_file: true
+  name: ../../../hw/vendor/pulp-platform-common-cells/include/common_cells/assertions.svh
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  include_path: ../../../hw/vendor/pulp-platform-register-interface/include
+  is_include_file: true
+  name: ../../../hw/vendor/pulp-platform-register-interface/include/register_interface/typedef.svh
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  include_path: ../../../hw/vendor/pulp-platform-register-interface/include
+  is_include_file: true
+  name: ../../../hw/vendor/pulp-platform-register-interface/include/register_interface/assign.svh
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../hw/simulation/conv1d_sram_wrapper.sv
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../hw/vendor/pulp-platform-tech-cells-generic/src/rtl/tc_sram.sv
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: systemVerilogSource
+  name: ../../../tb/conv1d_tb_wrapper.sv
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: cppSource
+  name: ../../../tb/conv1d_tb.cpp
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: cppSource
+  name: ../../../tb/tb_macros.cpp
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: cppSource
+  name: ../../../tb/tb_components.cpp
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: cppSource
+  name: ../../../tb/data.c
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: cppSource
+  is_include_file: true
+  name: ../../../tb/tb_components.hh
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: cppSource
+  is_include_file: true
+  name: ../../../tb/tb_macros.hh
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: cppSource
+  is_include_file: true
+  name: ../../../tb/obi.hh
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: cppSource
+  is_include_file: true
+  name: ../../../tb/data.h
+- core: polito:isa-lab:conv1d:0.0.1
+  file_type: cppSource
+  is_include_file: true
+  name: ../../../sw/conv1d_control_reg.h
+hooks:
+  post_run:
+  - cmd:
+    - cp
+    - logs/waves.fst
+    - ../../sim-common/
+    env: &id001
+      FILES_ROOT: ../../..
+    name: copy_waves
+  pre_run:
+  - cmd:
+    - mkdir
+    - -p
+    - ../../sim-common
+    env: *id001
+    name: prepare_dirs
+name: polito_isa-lab_conv1d_0.0.1
+parameters:
+  log_level:
+    datatype: str
+    description: "Set the log level. Admitted values: LOG_NONE|LOG_LOW|LOG_MEDIUM|LOG_HIGH|LOG_FULL|LOG_DEBUG.
+      \nErrors and configuration messages are always printed.\n"
+    paramtype: cmdlinearg
+tool_options:
+  verilator:
+    mode: cc
+    verilator_options:
+    - --cc
+    - --assert
+    - --trace
+    - --trace-fst
+    - --trace-structs
+    - --trace-max-array 128
+    - --x-assign unique
+    - --x-initial unique
+    - --exe
+    - conv1d_tb.cpp
+    - -Wall
+    - -Wpedantic
+toplevel: conv1d_tb_wrapper
+version: 0.2.1
+vpi: []
