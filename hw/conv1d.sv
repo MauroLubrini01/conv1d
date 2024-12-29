@@ -46,7 +46,7 @@ module conv1d (
   conv1d_sram_pkg::sram_req_t int_mem_req, ext_mem_req, mem_req;
   conv1d_sram_pkg::sram_rsp_t mem_rsp;
   logic                       ext_mem_gnt;
-  logic rstn; //total reset signal (combining the external reset with the control_reg reset))
+  logic rstn; //general reset signal (combining the external reset with the control_reg reset))
 
 
   // ---------------------
@@ -56,7 +56,7 @@ module conv1d (
   // The internal memory available to the accelerator as a data buffer has been
   // already instantiated below.
 
-  assign rst = rst_ni & rst_n;
+  assign rstn = rst_ni & rst_n;
 
   accel hw_accellerator (
     .accel_start    (start),
