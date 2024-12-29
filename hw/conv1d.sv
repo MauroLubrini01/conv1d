@@ -46,6 +46,8 @@ module conv1d (
   conv1d_sram_pkg::sram_req_t int_mem_req, ext_mem_req, mem_req;
   conv1d_sram_pkg::sram_rsp_t mem_rsp;
   logic                       ext_mem_gnt;
+  logic rstn; //total reset signal (combining the external reset with the control_reg reset))
+
 
   // ---------------------
   // INTERNAL ARCHITECTURE
@@ -54,10 +56,12 @@ module conv1d (
   // The internal memory available to the accelerator as a data buffer has been
   // already instantiated below.
 
+  assign rst = rst_ni & rst_n;
+
   accel hw_accellerator (
     .accel_start    (start),
     .clk            (clk_i),
-    .rst_n          (rst_n),
+    .rst_n          (rstn),
     .accel_in_data  (mem_rsp.rdata),
     .accel_done     (done),
     .accel_done_e   (done_e),
@@ -108,7 +112,7 @@ module conv1d (
     .sram_rsp_t(conv1d_sram_pkg::sram_rsp_t)
   ) u_obi_bridge (
     .clk_i     (clk_i),
-    .rst_ni    (rst_ni),
+    .rst_ni    (rstn),
     .obi_req_i (mem_req_i),
     .obi_rsp_o (mem_rsp_o),
     .sram_req_o(ext_mem_req),
@@ -125,7 +129,7 @@ module conv1d (
     .DATA_WIDTH(32'd32)
   ) u_internal_mem (
     .clk_i  (clk_i),
-    .rst_ni (rst_ni),
+    .rst_ni (rstn),
     .req_i  (mem_req.req),
     .we_i   (mem_req.we),
     .addr_i (mem_req.addr[AddrWidth-1:0]),
