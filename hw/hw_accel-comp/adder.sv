@@ -1,9 +1,9 @@
 module adder #(
   parameter N = 16
 ) (
-  input  [N-1:0] a,
-  input  [N-1:0] b,
-  output [  N:0] s
+  input signed [N-1:0] a,
+  input signed [N-1:0] b,
+  output signed [  N:0] s
 );
 
   assign s = a + b;
